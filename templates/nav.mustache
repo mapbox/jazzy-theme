@@ -1,4 +1,11 @@
 <nav class="navigation">
+  {{^disable_search}}
+    <div class="header-col--secondary">
+      <form role="search" action="{{path_to_root}}search.json">
+        <input type="text" placeholder="Search documentation" data-typeahead>
+      </form>
+    </div>
+  {{/disable_search}}
   <ul class="nav-groups">
     {{#structure}}
     <li class="nav-group-name" data-name="{{section}}">
