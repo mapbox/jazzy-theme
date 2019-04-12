@@ -13,8 +13,11 @@
     <script src="{{path_to_root}}js/lunr.min.js" defer></script>
     <script src="{{path_to_root}}js/typeahead.jquery.js" defer></script>
     <script src="{{path_to_root}}js/jazzy.search.js" defer></script>
-    <meta class="swiftype" name="type" data-type="enum" content="{{module_name}} Reference" />
     <meta class="swiftype" name="title" data-type="string" content="{{name}}" />
+    <meta class="swiftype" name="excerpt" data-type="string" content="" />
+    <meta class="swiftype" name="site" data-type="string" content="iOS" />
+    <meta class="swiftype" name="subsite" data-type="string" content="{{kind}}" />
+    <meta class="swiftype" name="contentType" data-type="string" content="reference" />
     {{/disable_search}}
     <style type="text/css">
       .nav-group-name[data-name="{{name}}"] > .small-heading,
